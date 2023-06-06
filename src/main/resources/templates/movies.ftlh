@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="movies" type="String" -->
 <!DOCTYPE html>
 <html>
 <head>

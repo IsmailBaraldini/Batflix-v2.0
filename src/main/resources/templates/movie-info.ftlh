@@ -1,7 +1,7 @@
-<#-- @ftlvariable name="movie.id" type="java.lang.String" -->
-<#-- @ftlvariable name="movie.year" type="java.lang.String" -->
+<#-- @ftlvariable name="movie.id" type="java.lang.Long" -->
+<#-- @ftlvariable name="movie.year" type="java.lang.Integer" -->
 <#-- @ftlvariable name="movie.city" type="java.lang.String" -->
-<#-- @ftlvariable name="movie.rating" type="java.lang.String" -->
+<#-- @ftlvariable name="movie.rating" type="java.lang.Long" -->
 <#-- @ftlvariable name="movie.description" type="java.lang.String" -->
 <#-- @ftlvariable name="movie.title" type="java.lang.String" -->
 <!DOCTYPE html>
