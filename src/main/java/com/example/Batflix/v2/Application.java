@@ -1,4 +1,4 @@
-package com.example.Batflix.v20;
+package com.example.Batflix.v2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

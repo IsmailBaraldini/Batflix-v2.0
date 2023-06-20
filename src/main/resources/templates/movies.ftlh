@@ -5,12 +5,19 @@
     <title>BATFLIX V2.0</title>
 </head>
 <body>
-<h1>BATFLIX</h1><hr>
+<h1>BATFLIX</h1>
+<hr>
 <h4>Movies from all the World</h4>
+<form action="/" method="get">
+    Search by title: <input type="text" name="title"><br>
+    <input type="submit" value="Search"/>
+</form>
 <#list movies as movie>
     <div>
-        <p><b>${movie.title}:</b>${movie.year} | <a href ="/movie/${movie.id}">More Information...</a></p>
+        <p><b>${movie.title}:</b>${movie.year} | <a href="/movie/${movie.id}">More Information...</a></p>
     </div>
+    <#else>
+    <h3> Movies not found</h3>
 </#list>
 <hr>
 <h3>Add new movie</h3>

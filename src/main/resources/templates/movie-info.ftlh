@@ -10,7 +10,8 @@
     <title>BATFLIX V2.0</title>
 </head>
 <body>
-<h1>BATFLIX</h1><hr>
+<h1>BATFLIX</h1>
+<hr>
 <h4>More info about movie</h4>
 
 <b>Movie title: </b>${movie.title}<br>
@@ -19,7 +20,7 @@
 <b>Movie city: </b>${movie.city}<br>
 <b>Movie year: </b>${movie.year}<br>
 <hr>
-<h3>Add new movie</h3>
+
 <form action="/movie/delete/${movie.id}" method="post">
     <input type="Submit" value="Delete movie"/>
 </form>

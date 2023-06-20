@@ -1,13 +1,14 @@
-package com.example.Batflix.v20.controllers;
+package com.example.Batflix.v2.controllers;
 
-import com.example.Batflix.v20.models.Movie;
-import com.example.Batflix.v20.services.MovieService;
+import com.example.Batflix.v2.models.Movie;
+import com.example.Batflix.v2.services.MovieService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequiredArgsConstructor
@@ -16,8 +17,8 @@ public class MovieController {
 
 
     @GetMapping("/")
-    public String movies(Model model) {
-        model.addAttribute("movies", movieService.listMovies());
+    public String movies(@RequestParam(name = "title", required = false) String title, Model model) {
+        model.addAttribute("movies", movieService.listMovies(title));
         return "movies";
     }
 
